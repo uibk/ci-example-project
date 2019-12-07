@@ -5,15 +5,17 @@
   "main": "server.js",
   "scripts": {
     "lint": "$(npm bin)/eslint server.js",
-    "deploy": "PORT=80 node server.js",
-    "deploy-stage": "node server.js",
+    "deploy": "PORT=80 pm2 start server.js",
+    "deploy-stage": "pm2 start server.js",
     "start": "node server.js",
     "test": "echo '4 of 4 tests succeeded.'"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "braces": "^2.3.2",
+    "express": "^4.17.1",
+    "pm2": "^4.2.0"
   },
   "devDependencies": {
     "eslint": "^6.7.2"
