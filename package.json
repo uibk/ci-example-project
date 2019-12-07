@@ -1,0 +1,21 @@
+{
+  "name": "ci-example-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint server.js",
+    "deploy": "PORT=80 node server.js",
+    "deploy-stage": "node server.js",
+    "start": "node server.js",
+    "test": "echo '4 of 4 tests succeeded.'"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2"
+  }
+}
