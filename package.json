@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "lint": "$(npm bin)/eslint server.js",
+    "lint": "eslint server.js",
     "deploy": "PORT=80 pm2 start server.js",
     "deploy-stage": "pm2 start server.js",
     "start": "node server.js",
